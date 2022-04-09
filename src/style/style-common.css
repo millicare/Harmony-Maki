@@ -1,0 +1,729 @@
+* {box-sizing: border-box;}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-BlackItalic.eot');
+    src: local('Axiforma Black Italic'), local('Axiforma-BlackItalic'),
+        url('../fonts/Axiforma/Axiforma-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-BlackItalic.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-Bold.eot');
+    src: local('Axiforma Bold'), local('Axiforma-Bold'),
+        url('../fonts/Axiforma/Axiforma-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-Bold.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-ThinItalic.eot');
+    src: local('Axiforma Thin Italic'), local('Axiforma-ThinItalic'),
+        url('../fonts/Axiforma/Axiforma-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-ThinItalic.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-Heavy.eot');
+    src: local('Axiforma Heavy'), local('Axiforma-Heavy'),
+        url('../fonts/Axiforma/Axiforma-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-Heavy.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-Medium.eot');
+    src: local('Axiforma Medium'), local('Axiforma-Medium'),
+        url('../fonts/Axiforma/Axiforma-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-Medium.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-LightItalic.eot');
+    src: local('Axiforma Light Italic'), local('Axiforma-LightItalic'),
+        url('../fonts/Axiforma/Axiforma-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-LightItalic.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-BoldItalic.eot');
+    src: local('Axiforma Bold Italic'), local('Axiforma-BoldItalic'),
+        url('../fonts/Axiforma/Axiforma-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-BoldItalic.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-BookItalic.eot');
+    src: local('Axiforma Book Italic'), local('Axiforma-BookItalic'),
+        url('../fonts/Axiforma/Axiforma-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-BookItalic.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-SemiBold.eot');
+    src: local('Axiforma SemiBold'), local('Axiforma-SemiBold'),
+        url('../fonts/Axiforma/Axiforma-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-SemiBold.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-Black.eot');
+    src: local('Axiforma Black'), local('Axiforma-Black'),
+        url('../fonts/Axiforma/Axiforma-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-Black.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-Thin.eot');
+    src: local('Axiforma Thin'), local('Axiforma-Thin'),
+        url('../fonts/Axiforma/Axiforma-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-Thin.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-Book.eot');
+    src: local('Axiforma Book'), local('Axiforma-Book'),
+        url('../fonts/Axiforma/Axiforma-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-Book.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-ExtraBold.eot');
+    src: local('Axiforma ExtraBold'), local('Axiforma-ExtraBold'),
+        url('../fonts/Axiforma/Axiforma-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-ExtraBold.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-HeavyItalic.eot');
+    src: local('Axiforma Heavy Italic'), local('Axiforma-HeavyItalic'),
+        url('../fonts/Axiforma/Axiforma-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-HeavyItalic.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-MediumItalic.eot');
+    src: local('Axiforma Medium Italic'), local('Axiforma-MediumItalic'),
+        url('../fonts/Axiforma/Axiforma-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-MediumItalic.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-Italic.eot');
+    src: local('Axiforma Italic'), local('Axiforma-Italic'),
+        url('../fonts/Axiforma/Axiforma-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-Italic.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-SemiBoldItalic.eot');
+    src: local('Axiforma SemiBold Italic'), local('Axiforma-SemiBoldItalic'),
+        url('../fonts/Axiforma/Axiforma-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-Regular.eot');
+    src: local('Axiforma Regular'), local('Axiforma-Regular'),
+        url('../fonts/Axiforma/Axiforma-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-Regular.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-Light.eot');
+    src: local('Axiforma Light'), local('Axiforma-Light'),
+        url('../fonts/Axiforma/Axiforma-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-Light.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma/Axiforma-ExtraBoldItalic.eot');
+    src: local('Axiforma ExtraBold Italic'), local('Axiforma-ExtraBoldItalic'),
+        url('../fonts/Axiforma/Axiforma-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Axiforma/Axiforma-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/Axiforma/Axiforma-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+
+::-webkit-scrollbar {width: 6px;}
+/* ::-webkit-scrollbar:focus{50px} */
+/*::-webkit-scrollbar-track {background: #ddd; }*/
+::-webkit-scrollbar-thumb {background: #212742 ;border-radius:5px;}
+::-webkit-scrollbar-thumb:hover {background: linear-gradient(180deg, #7EE1FB 0%, #61BDE9 100%); }
+
+body{font-family: 'Axiforma';}
+h4{font-size: 13px;}
+h3{font-size: 16px;}
+h2{font-size: 24px;}
+.theme-btn{border-radius: 15px; min-height: 40px; padding: 0; font-weight: 600; font-size: 15px; box-shadow: none; text-transform: capitalize; letter-spacing: 0.75px}
+.theme-btn:hover{box-shadow: none; transition: 0.5s}
+.text-white{color: white}
+.main-nav .btn{min-width: 140px;}
+.navbar-row{min-height: 135px; padding-top: 25px !important; box-shadow: none; margin-bottom: 1.5rem}
+.top-menu .nav-item{margin-left: 1rem; margin-right: 1rem}
+.top-menu .nav-item .nav-link{letter-spacing: 1px; font-size: 14px; font-weight: 600;}
+.menu-bottom-border{margin-left: 13px; margin-top: -17px;}
+.top-menu .navbar{margin-top: 25px; box-shadow: none}
+.theme-toggle{margin-top: -10px;}
+.wallet-account{margin-top: 38px;}
+.top-logo:hover svg path.logo-eye,
+
+
+.P-C-container{max-width: 96%;}
+.F-S-row{border-radius: 26px;}
+.container-heading{text-transform: uppercase; font-size: 13px; font-weight: 600; letter-spacing: 1.5px;}
+.add-to-wallet{font-size: 29px; font-weight: 800}
+.add-to-wallet:hover{transition: 0.5s}
+.expected-amount{color: #4F6DE7; font-weight: 600}
+.wallet-price{font-size: 24px; font-weight: 800}
+.legend-text{font-size: 13px;}
+.F-S-wallet .theme-btn-blue{min-height: 56px; color: white; min-width: 420px}
+.F-S-bg-texture{position: absolute; right: -80px; top: 60px;}
+.F-S-feature{border-radius: 26px; min-height: 325px; min-width: 220px; margin-right:20px !important}
+.feature-name{font-size: 13px; font-weight: 500; color: white; text-transform: capitalize}
+.F-S-feature-content{padding: 2rem}
+.F-S-feature-heading{font-size: 14px; font-weight: 600}
+.F-S-feature-value{font-size: 22px; font-weight: 600}
+.F-S-feature-legend{font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px}
+.apr-feature {background: linear-gradient(180deg, #F0C24A 0%, #EF804B 100%); box-shadow: 0px 10px 40px #FFBB97;}
+.apr-feature .feature-texture{position: absolute; top: 0; right: 0}
+.vaults-feature {background:linear-gradient(180deg, #6AB8F9 0%, #4970F6 100%); box-shadow: 0px 10px 40px #A2CFFF;}
+.vaults-feature .feature-texture{position: absolute; top: 0; right: 0}
+.pools-feature {background: linear-gradient(180deg, #79DB72 0%, #71CCA4 100%); box-shadow: 0px 10px 40px #A6ECCB;}
+.pools-feature .feature-texture{position: absolute; top: 0; right: 0}
+.Feature-1:hover .apr-feature{background: linear-gradient(180deg, #AE8F3D 0%, #EF804B 100%); transition: 0.5s}
+.Feature-2:hover .vaults-feature{background: linear-gradient(180deg, #5693C7 0%, #4970F6 100%); transition: 0.5s}
+.Feature-3:hover .pools-feature{background: linear-gradient(180deg, #5BAE55 0%, #71CCA4 100%); transition: 0.5s}
+
+
+.switcher { position: relative; width: 56px; height: 30px; border-radius: 25px; margin: 0;}
+.switcher input { -webkit-appearance: none;  -moz-appearance: none;  appearance: none;
+  position: relative; width: 56px; height: 30px; border-radius: 25px; background-color: #1e1e1e; outline: none;}
+.switcher input:before, body span.switcher input:after { z-index: 2; position: absolute; top: 50%; transform: translateY(-50%); color: #ffffff;}
+.switcher input:before {font-family: "Font Awesome 5 Free"; content: "\f185"; left: 6px;}
+.switcher input:after { font-family: "Font Awesome 5 Free"; content: "\f186";  right: 6px;}
+.switcher label { z-index: 1; position: absolute; top: 0px; bottom: 0px; border-radius: 20px;}
+.switcher.switcher-1 input { transition: 0.25s -0.1s;}
+.switcher.switcher-1 input:checked { background-color: #ffffff;}
+.switcher.switcher-1 input:checked:before { color: #ffffff;transition: color 0.5s 0.2s;}
+.switcher.switcher-1 input:checked:after { color: #cccccc; transition: color 0.5s;}
+.switcher.switcher-1 input:checked + label { left: 0px; right: 26px; background: #1e1e1e; transition: left 0.5s, right 0.4s 0.2s;}
+.switcher.switcher-1 input:not(:checked) { background: #1e1e1e; transition: background 0.5s -0.1s;}
+.switcher.switcher-1 input:not(:checked):before { color: #cccccc; transition: color 0.5s;}
+.switcher.switcher-1 input:not(:checked):after { color: #1e1e1e; transition: color 0.5s 0.2s;}
+.switcher.switcher-1 input:not(:checked) + label { left: 25px; right: 0px; background: #ffffff; transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;}
+.switcher.switcher-2 {overflow: hidden;}
+.switcher.switcher-2 input { transition: background-color 0s 0.5s;}
+.switcher.switcher-2 input:before { color: #1e1e1e;}
+.switcher.switcher-2 input:after { color: #ffffff;}
+.switcher.switcher-2 input:checked { background-color: #ffffff;}
+.switcher.switcher-2 input:checked + label { background: #ffffff;
+  -webkit-animation: turn-on 0.5s ease-out; animation: turn-on 0.5s ease-out;}
+@-webkit-keyframes turn-on {
+  0% {left: 100%;}
+  100% {left: 0%;}
+}
+@keyframes turn-on {
+  0% {left: 100%;}
+  100% {left: 0%;}
+}
+.switcher.switcher-2 input:not(:checked) {background: #1e1e1e;}
+.switcher.switcher-2 input:not(:checked) + label {background: #1e1e1e;
+  -webkit-animation: turn-off 0.5s ease-out; animation: turn-off 0.5s ease-out;}
+@-webkit-keyframes turn-off {
+  0% {right: 100%;}
+  100% {right: 0%;}
+}
+@keyframes turn-off {
+  0% {right: 100%;}
+  100% {right: 0%;}
+}
+
+.feature-ic{width: 60px; height: 60px}
+
+
+.FS-TVL-row{border-radius: 26px;}
+.F-stat{border-left: 4px solid;}
+.F-stat-value{font-size: 20px; font-weight: 800}
+.F-stat-heading{font-size: 13px; font-weight: 600}
+.market-cap{border-left-color: #7FD7F5}
+.total-minted{border-left-color: #F0BE4A}
+.total-burned{border-left-color: #EF854B}
+.circulating-supply{border-left-color: #6AB7F9}
+.maximum-supply{border-left-color: #4B73F7}
+.new-FISH{border-left-color: #79DB73}
+.stats-texture{position: absolute; top: 40px; right: 45px; z-index: 1}
+
+.TVL-value{font-size: 29px; font-weight: 800}
+.TVL-farms{margin-left: -22px;}
+.TVL-graph{width: 100%; height: auto}
+
+.News-row{border-radius: 26px;}
+.news{border-radius: 16px;}
+.page-name{font-size: 16px; font-weight: 600}
+.page-tag{font-size: 13px; font-weight: 500}
+.page-desc{font-size: 13px; font-weight: 500; line-height: 1.5}
+.post-img{max-width: 100%;}
+
+.nav-overlay{text-align: center}
+.nav-overlay .theme-btn{min-width: 140px; min-height: 40px; border-radius: 15px;}
+.nav-overlay .navbar{box-shadow: none; margin-top: 2rem; margin-left: 2.5rem}
+.nav-overlay .navbar-nav a{text-align: left; font-size: 14px; font-weight: 600}
+.menu-texture{position: absolute; top: 30%; right: 0}
+
+
+
+
+/* ===================================================== Vaults Page Start ================================================ */
+.info-link{top: 25px; right: 25px; z-index: 1}
+.switch input {display: none;}
+.switch input + div {position: relative;}
+.switch input + div:before, .switch input + div:after {
+  --s: 1;
+  content: "";
+  position: absolute; height: 3px; top: 13.5px; width: 17px;
+  background: var(--line); transform: scaleX(var(--s)); transition: transform var(--duration) ease;}
+.switch input + div:before {
+  --s: 0;
+  left: 11px; transform-origin: 0 50%; border-radius: 2px 0 0 2px;}
+.switch input + div:after { left: 18px; transform-origin: 100% 50%; border-radius: 0 2px 2px 0;}
+.switch input + div span {padding-left: 56px; font-size: 13px; font-weight: 600; line-height: 28px; color: var(--text);}
+.switch input + div span:before {
+  --x: 0;
+  --b: var(--circle);
+  --s: 2px;
+  content: "";
+  position: absolute;
+  left: 0; top: 6px;
+  width: 18px; height: 18px;
+  border-radius: 50%; box-shadow: inset 0 0 0 var(--s) var(--b);
+  transform: translateX(var(--x));
+  transition: box-shadow var(--duration) ease, transform var(--duration) ease;
+}
+.switch input + div span:not(:empty) {padding-left: 60px;}
+.switch input:checked + div:before {--s: 1;}
+.switch input:checked + div:after {--s: 0;}
+.switch input:checked + div span:before { --x: 28px; --s: 12px; --b: var(--dot);}
+.switch + .switch {margin-top: 32px;}
+
+.select-input{min-height: 56px; border:1px solid; border-radius: 60px; font-size: 13px; font-weight: 600; cursor: pointer; padding: 0 15px;}
+.select-input { -webkit-appearance: none; -moz-appearance: none; -o-appearance: none;}
+.select-input + i.fa {float: right; margin-top: 0px; margin-left: -30px;}
+.select-input:focus-visible{outline: none; border: none}
+.select-input{min-width: 185px;}
+.search-btn{border-radius: 60px;}
+.search-input{position: relative}
+.search-input input{min-height: 56px !important; border:1px solid; border-radius: 60px !important; font-size: 13px; font-weight: 600; cursor: pointer; padding: 0 15px; padding-right: 55px;}
+/*.search-input input:focus{background: none}*/
+.search-btn{width: 40px; height: 40px; border-radius: 60px !important; margin-top: 8px; position: absolute !important; z-index: 9 !important; right: 10px; font-size: 13px;}
+.search-btn svg{margin-top: -8px;}
+.tab-menu-link{min-height: 200px; border-radius: 26px !important; border: 1px solid; padding: 16px 8px !important;}
+.tab-menu-link .F-stat-value{text-align: left;}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{border: none !important}
+.menu-link-stats{border-radius: 26px; min-height: 152px;}
+.menu-link-stats .F-stat-heading{text-align: left}
+.tab-link-name{position: absolute; bottom: 0; left: 0}
+.staked-tab{border: 1px solid #74D292 !important}
+.sticky-content{position: sticky; top: 0;  width: 555px; float: right}
+.tab-detail{width: 555px; border-radius: 26px;}
+.tab-wallet-texture{position: absolute; right: 25px; top: 20px}
+.tab-wallet-heading{font-size: 29px; font-weight: 800;}
+
+.tab-detail .search-btn{min-width: 95px; padding-top: 0; color: white}
+.tab-detail .TVL-farms{margin-left: 0}
+.tab-detail .F-S-feature{min-width: 150px;}
+.tab-detail .feature-name{font-size: 16px; text-align: center}
+.tab-detail  .F-S-feature-content{padding: 1rem}
+.tab-detail .feature-value{font-size: 22px; font-weight: 800; color: white}
+.tab-detail  .feature-legend{font-size: 14px; font-weight: 500; color: white}
+.tab-detail .vaults-feature .feature-texture{width: 150px;}
+.tab-detail-btns .theme-btn{min-width: 200px;}
+.tab-detail .Feature-1, .tab-detail .Feature-2{margin-right: 1rem}
+
+.FAQ-panel{margin-top: 2rem;}
+.collapsible.tab-menu-link{position: relative}
+button.collapsible{border: none; width: 100%}
+.collapsible.tab-menu-link.active{border-radius: 0 !important; border-top-right-radius: 26px !important; border-top-left-radius: 26px !important}
+.content {max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;}
+.show.content {max-height: max-content;}
+.FAQ-panel .tab-detail{width: 100%; border-radius: 0;}
+.FAQ-panel .show .tab-detail{border-radius: 0 !important; border-bottom-left-radius: 26px !important; border-bottom-right-radius: 26px !important}
+.FAQ-panel .TVL-farms svg, .FAQ-panel .TVL-vaults svg{margin-left: -30px}
+.FAQ-panel .tab-link-name{top: 0; right: 0; bottom: auto; left: auto; z-index: 1}
+.FAQ-panel .tab-name{margin-top: 2rem; margin-bottom: 2rem}
+.FAQ-panel .tab-wallet-texture{width: 54px;}
+.FAQ-panel .tab-detail .search-btn{font-size: 13px;}
+.tablet-features .feature-1,
+.tablet-features .feature-2,
+.tablet-features .feature-3{min-width: 150px !impirtant;}
+
+
+/* ===================================================== Vaults Page End ================================================ */
+
+/* ===================================================== Pools Page Start ================================================ */
+.active-tabs .nav-item:nth-child(1){border-right: 1px solid}
+.active-tabs .nav-item a{padding: 0; font-size: 13px; letter-spacing: 1.5px; background: none !important;}
+.active-tabs .nav-item a.active{font-weight: 900}
+.curr-item{border-radius: 26px; min-height:560px;}
+.btn-green{min-height: 40px; min-width: 40px; border-radius: 26px; background: linear-gradient(180deg, #79DB72 0%, #71CCA4 100%); box-shadow: 0px 5px 20px #A6ECCB; color: white}
+.curr-name{font-size: 29px; font-weight: 800}
+.curr-x-val{font-size: 11px; color: white; background: #030303; border-radius: 60px; width: 38px; height: 20px;}
+.curr-item .curr-props h3{font-size: 13px; font-weight: 600}
+.curr-detail .detail-heading{font-size: 13px; font-weight: 600; letter-spacing: 2px;}
+.curr-detail h4, .curr-detail a{font-size: 11px; font-weight: 600}
+.estimated-val{color: #4F6DE7 !important}
+.curr-detail a{border-bottom: 1px solid; padding-bottom: 1px;}
+.FISH-item{background: linear-gradient(208.43deg, #8148E5 -4.56%, #251345 44.38%) !important; }
+.FISH-item .curr-name{color: white}
+.comp-link{color: #79DB72; font-weight: 600; font-size: 10px; border-bottom: 1px solid #79DB72; padding-bottom: 1px;}
+.comp-link:hover{color: white; border-bottom-color: white}
+.FISH-item .curr-props h3:not(.estimated-val){color: white !important;}
+.FISH-item .curr-detail h3, .FISH-item .curr-detail h4{color: white !important}
+.FISH-item .curr-detail a{color: white !important; border-bottom-color: white !important}
+.FISH-item .calc-APR path{fill:#ffff}
+.curr-x-val.no-fees{min-width: 65px; background: linear-gradient(180deg, #79DB72 0%, #71CCA4 100%); box-shadow: 0px 10px 40px #A6ECCB;}
+.curr-btn .btn-green{font-weight: 600; font-size: 13px;}
+.curr-btn .btn-green:hover{background: #030303; color: white}
+.curr-btn .btn-green:not(.unlock-btn){min-width: 87px;}
+.FISH-item .curr-btn .btn-green{box-shadow: 0px 10px 40px #2C9363 !important;}
+.curr-item.staked{border: 1px solid #74D292}
+
+/* ===================================================== Pools Page End ================================================ */
+
+/* ===================================================== Farms Page Start ================================================ */
+.cat-texture{position: absolute; right: 0}
+.curr-x-val.quick-swap{min-width: 86px; background: linear-gradient(180deg, #6AB8F9 0%, #4970F6 100%); box-shadow: 0px 10px 40px #A2CFFF;}
+.curr-x-val.sushi-swap{min-width: 86px; background: linear-gradient(220.12deg, #F355A3 14.72%, #6B8DD7 77.13%); box-shadow: 0px 10px 40px #A2CFFF;}
+.curr-x-val.dfyn-swap{min-width: 45px; background: linear-gradient(220.12deg, #F355A3 14.72%, #6B8DD7 77.13%); box-shadow: 0px 10px 40px #A2CFFF;}
+/* ===================================================== Farms Page End ================================================ */
+
+/* ===================================================== Tanks Page Start ================================================ */
+.tanks-row .curr-x-val.stake-fish{min-width: 82px;}
+.tanks-btn{min-width: 263px !important;}
+.community-link{color: #79DB72 !important; border: none !important}
+.tanks-row .curr-item{min-height: 390px;}
+/* ===================================================== Tanks Page End ================================================ */
+
+
+
+
+
+@media(max-width:1439px){
+    .TVL-graph{max-width: 100%;}
+}
+
+@media (min-width:1441px){
+    .P-C-container{max-width: 1460px;}
+}
+
+@media (width:1280px){
+    .F-S-bg-texture{right: -50px;}
+    .F-S-wallet .theme-btn-blue{min-width: 320px;}
+}
+
+@media (min-width:1025px){
+    .News-content:hover{overflow-y: scroll}
+   .News-content{max-height: 423px; overflow-y: hidden; margin-bottom: 30px;}
+    .desktop-vaults{display: block}
+    .mobile-vaults{display: none}
+}
+
+@media (max-width:1024px){
+    .desktop-vaults{display: none}
+    .mobile-vaults{display: block}
+}
+
+@media (width:1024px){
+    .top-menu .nav-item{margin-left: 0.5rem; margin-right: 0.5rem}
+    .top-menu .nav-item .nav-link{font-size: 12px;}
+    .menu-bottom-border svg{width: 700px;}
+    .menu-bottom-border{margin-left: 22px;}
+    .main-nav .btn{min-width: 125px;}
+    .navbar-row{padding-left: 10px !important; padding-right: 10px !important}
+    .F-S-feature{margin-right: 1rem !important; min-width: 150px;}
+    .F-S-wallet .theme-btn-blue{min-width: 300px;}
+    .F-S-bg-texture{right: -150px;}
+    .F-S-feature-content{padding: 1rem; max-height: 325px;}
+    .Feature-1, .Feature-2, .Feature-3{margin-right: 0 !important}
+    .FS-TVL-section{width: 100%;}
+    .News-section{width: 100%; margin-top: 3rem !important; padding: 0}
+    .page-desc br {display: none}
+    
+    .select-input{min-width: 130px;}
+    .curr-row .col-sm-3{width: 33.33334%}
+    
+}
+@media(min-width:769px){
+    .mobile-menu{display: none !important}
+    .Feature-1,
+    .Feature-2{margin-right: 2rem}
+    .Feature-3{margin-right: 0.5rem}
+    .top-logo:hover svg path.logo-eye{fill: #FF0606 !important; transition: 0.5s}
+    .tab-menu-link .container-heading{text-align: left !important}
+    .FAQ-panel .FS-col{display: none}
+    .FAQ-panel .tablet-features{display: flex}
+    .FAQ-panel .TVL-stat-row{padding-left: 3rem}
+    
+}
+
+@media (width:768px){
+    .navbar-row{padding-left: 0 !important; padding-right: 0 !important}
+    .logo-brand{margin-left: 0px !important}
+    .menu-btn{margin-right: 0 !important; padding-right: 0}
+    .mobile-menu .theme-btn-black{margin-right: 40px; margin-top: 25px !important;}
+    .desktop-features{display: none !important}
+    .mobile-features{display: block !important}
+    .border-for-tab{display: flex !important; margin-left: 60px;}
+    .border-for-mobile{display: none !important}
+    .wallet-tab{width: 50%;}
+    .features-tab{display: none !important}
+    .mobile-features{width: 50%;}
+    .slide-content{padding: 20px 5px 20px 25px !important;}
+    .F-S-feature{box-shadow: none !important;}
+    .F-S-feature-slider{margin-bottom: 0 !important}
+    .FS-TVL-section{width: 100%;}
+    .News-section{width: 100%; margin-top: 3rem !important; padding: 0}
+    .page-desc br {display: none}
+    .Filter-Row .col-sm-3, .Filter-Row .col-sm-2{width: 100%;}
+    .FAQ-panel .FS-col{display: none !important}
+    .FAQ-panel .tablet-features{display: flex !important}
+    .FAQ-panel .TVL-stat-row{padding-left: 3rem}
+    
+    .curr-row .col-sm-3{width: 50%}
+    
+   
+    
+}
+
+@media (max-width:768px) {
+    .navbar-row{min-height: 80px; padding-top: 10px !important}
+    .desktop-menu{display: none !important}
+    .btn.theme-btn{border-radius: 8px ;}
+    .mobile-menu .theme-btn-black{min-width: 75px; min-height: 30px; font-size: 11px; margin-top: 19px;}
+    .btn.theme-toggler{min-width: 46px;}
+    .btn.theme-toggler svg{width: 46px;}
+    .mobile-menu-bottom-border{text-align: center; margin-top: 5px;}
+    .mobile-menu{padding: 3px 10px;}
+    .F-S-wallet .theme-btn-blue{min-width: 267px; border-radius: 15px; min-height: 40px;}
+    .F-S-bg-texture{display: none}
+    .add-to-wallet{font-size: 23px;}
+    .add-to-wallet svg{width: 36px;}
+    h3{font-size: 13px;}
+    .wallet-price{font-size: 20px;}
+    .legend-text{font-size: 11px;}
+    .logo-brand{margin-left: 24px;}
+    .logo-brand svg{width: 60px; height: 66px;}
+    .border-for-tab{display: none}
+    .border-for-mobile{display: flex}
+    .stats-texture{width: 60px; top: 25px; right: 33px;}
+    .fish-stats-col{border: none !important}
+    .F-stat-value{font-size: 18px;}
+    .F-stat-heading{font-size: 11px;}
+    .fish-stats-col .col-6{padding-right: 10px !important}
+    .FS-col{padding: 0}
+    .FS-TVL-section{padding: 0}
+    .TVL-value{font-size: 24px;}
+    .TVL-farms .d-flex, .TVL-vaults .d-flex{flex-direction: column}
+    .TVL-charts{padding: 0}
+    .TVL-graph{max-width: 110%; margin-bottom: 2rem; margin-top: 2rem}
+    .News-section{padding: 0}
+    .news{margin-bottom: 2rem}
+    .TVL-farms svg, .TVL-vaults svg{margin-left: -65px;}
+    .FS-col{margin-bottom: 2rem}
+    .overlay-logo svg path.logo-eye{fill:#FF0000}
+    .select-input{min-width: 100%;}
+    .tab-detail-btns{flex-direction: column;}
+    .tab-detail-btns .btn{margin-top: 1.5rem}
+    .FAQ-panel .FS-col{display: flex}
+    .FAQ-panel .tablet-features{display: none}
+    .FAQ-panel .container-heading{text-align: left !important}
+    
+    .curr-btn .btn{border-radius: 60px !important;}
+    .sorting-filters {justify-content: space-around !important;}
+    .curr-row .col-sm-3{padding-left: 0; padding-right: 0}
+    
+    .cat-texture{display: none}
+}
+
+@media (min-width:413px) and (max-width:420px){
+    .border-for-mobile{margin-left: 19px; margin-top: 5px;}
+}
+
+@media (min-width:400px) and (max-width:412px){
+    .border-for-mobile{margin-left: 19px; margin-top: 5px;}
+}
+
+@media (max-width:320px){
+    .mobile-menu-bottom-border{display: none}
+    .P-C-container{max-width: 100%;}
+    .TVL-value{font-size: 20px;}
+    .TVL-farms{margin-left: 0}
+    .F-S-wallet .theme-btn-blue{min-width: 220px;}
+    .TVL-farms, .TVL-vaults{width: 100%;}
+    .FS-TVL-section{padding: 0}
+    .stats-texture{top: 25px; right: 25px;}
+    .fish-stats-col .col-6{width: 100%;}
+}
+
+
+@media (orientation: landscape) and (max-height:550px){
+    .desktop-menu{display: none !important}
+    .navbar-row{min-height: 80px; padding-top: 10px !important}
+    .desktop-menu{display: none !important}
+    .btn.theme-btn{border-radius: 8px ;}
+    .mobile-menu .theme-btn-black{min-width: 75px; min-height: 30px; font-size: 11px; margin-top: 7px;}
+    .btn.theme-toggler{min-width: 46px;}
+    .btn.theme-toggler svg{width: 46px;}
+    .mobile-menu-bottom-border{text-align: center; margin-top: 5px;}
+    .mobile-menu{padding: 3px 10px;}
+    .F-S-wallet .theme-btn-blue{min-width: 267px; border-radius: 15px; min-height: 40px;}
+    .F-S-bg-texture{display: none}
+    .add-to-wallet{font-size: 23px;}
+    .add-to-wallet svg{width: 36px;}
+    h3{font-size: 13px;}
+    .wallet-price{font-size: 20px;}
+    .legend-text{font-size: 11px;}
+    .logo-brand{margin-left: -20px;}
+    .stats-texture{width: 60px; top: 25px; right: 33px;}
+    .fish-stats-col{border: none !important}
+    .F-stat-value{font-size: 18px;}
+    .F-stat-heading{font-size: 11px;}
+    .fish-stats-col .col-6{padding-right: 10px !important}
+    .FS-col{padding: 0}
+    .FS-TVL-section{padding: 0}
+    .TVL-value{font-size: 24px;}
+    .TVL-farms .d-flex, .TVL-vaults .d-flex{flex-direction: column}
+    .TVL-charts{padding: 0}
+    .TVL-graph{max-width: 110%; margin-bottom: 2rem; margin-top: 2rem}
+    .News-section{padding: 0}
+    .news{margin-bottom: 2rem}
+    .TVL-farms svg, .TVL-vaults svg{margin-left: -65px;}
+    .FS-col{margin-bottom: 2rem}
+    
+    .navbar-row{padding-left: 0 !important; padding-right: 0 !important}
+    .logo-brand{margin-left: -48px !important}
+    .menu-btn{margin-right: 0 !important; padding-right: 0}
+    .mobile-menu .theme-btn-black{margin-right: 40px; margin-top: 25px !important;}
+    .desktop-features{display: none !important}
+    .mobile-features{display: block !important}
+    .border-for-tab{display: flex !important; margin-left: 80px;}
+    .border-for-mobile{display: none !important}
+    .wallet-tab{width: 50%;}
+    .features-tab{display: none !important}
+    .mobile-features{width: 50%;}
+    .slide-content{padding: 20px 5px 20px 25px !important;}
+    .F-S-feature{box-shadow: none !important;}
+    .F-S-feature-slider{margin-bottom: 0 !important}
+    .FS-TVL-section{width: 100%;}
+    .News-section{width: 100%; margin-top: 3rem !important; padding: 0}
+    .page-desc br {display: none}
+    
+    
+    .desktop-menu{display: none !important}
+    .mobile-menu{display: flex !important}
+    
+    .nav-overlay .navbar-nav{display: flex; flex-direction: row;}
+    .nav-overlay .navbar-nav li{margin-right: 2rem}
+    
+    .Filter-Row .col-sm-3, .Filter-Row .col-sm-2{width: 100%;}
+    .select-input{min-width: 100%;}
+    
+    .desktop-vaults{display: none}
+    .mobile-vaults{display: block}
+    
+    .curr-row .col-sm-3{width: 50% !important}
+    .curr-btn .btn{border-radius: 60px !important;}
+    .curr-row .col-sm-3{padding-left: 0; padding-right: 0}
+    
+    .cat-texture{display: none}
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+

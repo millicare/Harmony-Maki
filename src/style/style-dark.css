@@ -1,0 +1,263 @@
+::-webkit-scrollbar-track {
+  background: #030303;
+}
+
+body {
+  --LightColorBlack: #fff;
+  --LightColorGray: #979dc6;
+}
+
+.theme-btn-black {
+  color: white;
+  background: linear-gradient(180deg, #8148e5 0%, #251345 100%);
+}
+.theme-btn-black:hover {
+  background: #030303;
+  color: white;
+}
+.top-menu .nav-item .nav-link {
+  color: var(--LightColorGray);
+}
+.top-menu .nav-item .nav-link:hover,
+.top-menu .nav-item .nav-link:focus,
+.top-menu .nav-item .nav-link.active {
+  color: var(--LightColorBlack);
+}
+
+body {
+  background: #101428;
+}
+.F-S-row {
+  background: #171b32;
+}
+.container-heading {
+  color: var(--LightColorGray);
+}
+.add-to-wallet svg rect {
+  fill: #8148e5;
+}
+.add-to-wallet {
+  color: var(--LightColorBlack);
+}
+.add-to-wallet:hover {
+  color: #8148e5;
+}
+.wallet-price {
+  color: var(--LightColorBlack);
+}
+.legend-text {
+  color: var(--LightColorGray);
+}
+.F-S-wallet .theme-btn-blue {
+  background: linear-gradient(180deg, #8148e5 0%, #251345 100%);
+}
+.F-S-wallet .theme-btn-blue:hover {
+  background: #030303;
+}
+.FS-TVL-row {
+  background: #171b32;
+}
+.F-stat-value {
+  color: var(--LightColorBlack);
+}
+.F-stat-heading {
+  color: var(--LightColorGray);
+}
+.fish-stats-col {
+  border-right: 1px solid #eeeeee;
+}
+.TVL-value {
+  color: var(--LightColorBlack);
+}
+.News-row {
+  background: #171b32;
+}
+.news {
+  background: #101428;
+}
+.page-name {
+  color: var(--LightColorBlack);
+}
+.page-tag {
+  color: var(--LightColorBlack);
+}
+.page-desc {
+  color: var(--LightColorBlack);
+}
+.nav-overlay {
+  background: #101428;
+}
+.close-menu {
+  color: var(--LightColorBlack);
+}
+.close-menu svg rect {
+  fill: var(--LightColorBlack);
+}
+.nav-overlay .navbar-nav a {
+  color: var(--LightColorGray);
+}
+.nav-overlay .navbar-nav a.active {
+  color: var(--LightColorBlack);
+}
+
+.theme-btn svg path {
+  fill: var(--LightColorGray);
+}
+.theme-btn svg line {
+  stroke: var(--LightColorGray);
+}
+.top-logo svg path {
+  fill: var(--LightColorGray);
+  stroke: var(--LightColorGray);
+}
+.menu-bottom-border svg line {
+  stroke: var(--LightColorGray);
+}
+.menu-bottom-border svg path {
+  stroke: var(--LightColorGray);
+}
+.F-S-bg-texture linearGradient stop {
+  stop-color: var(--LightColorGray);
+}
+
+.apr-feature {
+  box-shadow: 0px 10px 40px #7d5642;
+}
+.vaults-feature {
+  box-shadow: 0px 10px 40px #1b4e84;
+}
+.pools-feature {
+  box-shadow: 0px 10px 40px #2c9363;
+}
+
+.stats-texture {
+  filter: invert(1);
+}
+
+.menu-btn svg path {
+  fill: var(--LightColorGray);
+}
+.switcher.switcher-1 input:not(:checked),
+.switcher.switcher-1 input:checked + label {
+  background: var(--LightColorGray) !important;
+}
+
+.logo-brand svg path {
+  stroke: var(--LightColorGray);
+  stroke: 0.15px;
+  fill: var(--LightColorGray);
+}
+.border-for-tab line,
+.border-for-tab path {
+  stroke: var(--LightColorGray);
+}
+.border-for-mobile line,
+.border-for-mobile path {
+  stroke: var(--LightColorGray);
+}
+.overlay-logo svg path {
+  fill: red;
+  stroke: #030303;
+}
+.menu-texture linearGradient stop {
+  stop-color: var(--LightColorGray);
+}
+
+.top-logo:hover svg path {
+  stroke: #030303;
+}
+.top-logo:hover .logo-nose {
+  fill: #030303;
+}
+.brand-name path {
+  fill: var(--LightColorGray) !important;
+}
+
+.switch {
+  --line: #979dc6;
+  --dot: #979dc6;
+  --circle: #979dc6;
+  --duration: 0.3s;
+  --text: #979dc6;
+  cursor: pointer;
+}
+
+.select-input,
+.search-input input {
+  color: var(--LightColorGray);
+  border-color: var(--LightColorGray);
+  background: #101428;
+}
+.search-btn {
+  background: linear-gradient(180deg, #8148e5 0%, #251345 100%);
+}
+.menu-link-stats {
+  background: #101428;
+}
+.tab-menu-link {
+  background: #171b32 !important;
+}
+.tab-menu-link:hover,
+.tab-menu-link.active {
+  background: linear-gradient(208.43deg, #8148e5 -4.56%, #251345 44.38%) !important;
+}
+.tab-menu-link.active .menu-link-stats,
+.tab-menu-link:hover .menu-link-stats {
+  background: rgba(3, 3, 3, 0.1);
+}
+.tab-menu-link.active .F-stat-value,
+.tab-menu-link.active .F-stat-heading,
+.tab-menu-link:hover .F-stat-value,
+.tab-menu-link:hover .F-stat-heading,
+.tab-menu-link.active .container-heading,
+.tab-menu-link:hover .container-heading {
+  color: white;
+}
+.tab-wallet-heading {
+  color: var(--LightColorBlack);
+}
+.tab-detail {
+  background: #171b32;
+}
+.fa.fa-chevron-down {
+  color: var(--LightColorGray);
+}
+.info-link svg rect {
+  fill: #8148e5;
+}
+.search-input input {
+  color: var(--LightColorGray);
+}
+.search-input input:focus {
+  background: #101428;
+}
+
+.active-tabs .nav-item a {
+  color: var(--LightColorGray);
+}
+.active-tabs .nav-item a.active {
+  color: var(--LightColorBlack);
+}
+.curr-item {
+  background: #171b32;
+}
+.curr-name {
+  color: var(--LightColorBlack);
+}
+.curr-item .curr-props h3 {
+  color: var(--LightColorGray);
+}
+.curr-detail .detail-heading {
+  color: var(--LightColorGray);
+}
+.curr-detail a {
+  border-bottom-color: var(--LightColorGray);
+  color: var(--LightColorGray);
+}
+.btn-green {
+  box-shadow: 0px 10px 40px #2c9363 !important;
+}
+.curr-detail h4,
+.curr-detail a {
+  color: var(--LightColorGray);
+}

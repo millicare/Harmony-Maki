@@ -1,0 +1,128 @@
+{
+  "name": "react-auth-connectedrouter-mui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.4.4",
+    "@craco/craco": "^6.1.2",
+    "@ethersproject/providers": "^5.3.1",
+    "@harmony-js/crypto": "^0.1.56",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/data-grid": "^4.0.0-alpha.31",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@metamask/detect-provider": "^1.2.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@uniswap/sdk": "^3.0.3",
+    "@walletconnect/web3-provider": "^1.4.1",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/frame-connector": "^6.0.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/ledger-connector": "^6.1.9",
+    "@web3-react/torus-connector": "^6.1.9",
+    "@web3-react/walletconnect-connector": "^6.2.0",
+    "apexcharts": "^3.27.3",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-link-http": "^1.5.17",
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.21.1",
+    "bn.js": "^4.11.8",
+    "connected-react-router": "^6.9.1",
+    "date-fns": "^2.23.0",
+    "dayjs": "^1.10.6",
+    "ethers": "^5.4.1",
+    "graphql": "^15.5.1",
+    "graphql-tag": "^2.12.5",
+    "history": "^4.10.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "lightweight-charts": "^3.3.0",
+    "mdb-react-ui-kit": "^1.1.0",
+    "moment": "^2.29.1",
+    "notistack": "^1.0.9",
+    "numeral": "^2.0.6",
+    "parent-module": "^2.0.0",
+    "postcss": "^7.0.35",
+    "react": "^17.0.2",
+    "react-apexcharts": "^1.3.9",
+    "react-apollo": "^3.1.5",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-dom": "^17.0.2",
+    "react-paginate": "^7.1.3",
+    "react-query": "^3.19.1",
+    "react-redux": "^7.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "4.0.3",
+    "react-singleton-hook": "^3.2.1",
+    "react-tradingview-widget": "^1.3.2",
+    "react-use": "^17.2.4",
+    "rebass": "^4.0.7",
+    "redux": "^4.1.0",
+    "redux-debounced": "^0.5.0",
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^4.1.3",
+    "state": "^0.2.0",
+    "styled-components": "^5.3.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2",
+    "typescript": "^4.3.5",
+    "uikit": "^3.7.0",
+    "web-vitals": "^1.0.1",
+    "web3": "^1.4.0",
+    "web3-utils": "^1.5.0",
+    "web3modal": "^1.9.3"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css,ts,tsx}": [
+      "prettier --single-quote --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-json": "^3.0.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "node-sass": "^6.0.0",
+    "prettier": "^2.3.1"
+  }
+}
